@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar a:hover {
+            color: #ff5733;
+            transition: color 0.3s ease;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <a href="index.html" class="logo">Web Profile</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about" class="scroll">About</a></li>
+                    <li><a href="#skills" class="scroll">Skill</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="home fade-in">
+	    <img src="Yendi.JPG" alt="Foto Profil" class="round-image">
+            <p>Yendi Agustriadi</p>
+            <p>Web Development</p>
+        </div>
+    </header>
+
+    <section id="about" class="about fade-in">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Saya adalah seorang mahasiswa program Diploma III Teknologi Informasi di Politeknik 'Aisyiyah Pontianak. Saya memiliki kemampuan yang cukup dalam desain grafis dan fotografi, serta mampu melakukan editing foto dan video dengan baik.
+                Selain itu, saya juga memiliki keahlian dalam pemrograman web dengan menguasai HTML5, CSS3, JavaScript, serta framework React dan Node.js. Keahlian ini memungkinkan saya untuk mengembangkan berbagai jenis aplikasi web yang interaktif dan inovatif.
+                Saya selalu berusaha untuk mempertajam kemampuan dan pengetahuan saya dalam bidang teknologi informasi, serta berkomitmen untuk terus belajar dan mengikuti perkembangan terbaru dalam industri ini.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills fade-in">
+        <div class="container">
+            <h1>My Skills</h1>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Jika Anda tertarik bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi saya melalui formulir di bawah ini:</p>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Web Profile</p>
+            <p>Infinite Learning, a division of PT Kinema Systrans multimedia (a subsidiary of Infinite Studios), is centred on the development of vocational training courses relevant to Infinite Studios activity and the growing demand of skilled talent within the ecosystem of Nongsa Digital Park.</p>
+            <div class="social-media-icon">
+                <a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-facebook"></span></a>
+                <a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-twitter"></span></a>
+                <a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-instagram"></span></a>
+                <a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-whatsapp"></span></a>
+            </div>   
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
